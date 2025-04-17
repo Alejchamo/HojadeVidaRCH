@@ -1,0 +1,235 @@
+body {
+  background-color: rgb(223, 215, 230);
+  border: 4px solid #3a3a3a;
+  border-radius: 15px;
+  padding: 10px 15px;
+  margin: 20px auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  max-width: 1200px; /*se agrego responsive */ 
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  width: 100%; /*agregado en este momento*/
+}
+
+
+header h1 {
+    font-size: 50px;
+    /* text-align: center; se elimina */
+    color: rgb(18, 18, 83);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+
+header img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid rgb(18, 18, 83);
+  display: block;
+  margin: 10px auto;
+}
+
+
+header p {
+  font-size: 25px;
+  line-height: 1.4;
+  margin: 10px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  max-width: 100%;
+  overflow-wrap: anywhere;     /* <- clave para cortar el correo */
+  word-break: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+
+
+
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.botones button {
+    border-radius: 250px;
+    margin: 10px;
+    background-color: rgb(106, 108, 202);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;   
+    padding: 10px 20px;
+    color: rgb(172, 241, 158);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;   
+}
+
+.botones button:active {
+    background-color: rgb(100, 100, 200); /* Color al hacer click */
+    color: white; /* Cambia el color del texto */
+}
+
+.contenido {
+    display: none;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    text-align: justify;
+}
+
+
+#perfil {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: justify;
+    max-width: 1180px;
+    margin: 50px auto;
+    padding: 15px; 
+    border-left: 4px solid #860819;
+    border-radius: 15px;
+    background-color: #f1f1f1;
+      
+}
+
+
+#academico ol > li {
+    margin-bottom: 20px; /* Espacio entre los elementos numerados */
+  }
+  
+  .toggle-btn {
+    background-color: #305c0c;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 72%;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .toggle-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .info {
+    display: none;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    border-left: 4px solid #860819;
+    border-radius: 15px;
+    width: 70%;
+    margin: 10px auto;
+    
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 8px;
+  }
+
+  .btn-diploma {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #3734e9; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 8px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .btn-diploma:hover {
+    background-color: #35960f;
+  }
+
+  li {
+    font-size: 25px;
+  }
+
+  .btn-imprimir {
+    background-color: rgb(100, 100, 200);       /* Color institucional y serio */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 20px auto;
+    display: block;
+  }
+  
+  .btn-imprimir:hover {
+    background-color: #1ea31e;
+    transform: scale(1.03);
+  }
+  
+  .btn-imprimir:active {
+    transform: scale(0.98);
+  }
+  
+  @media print {
+    .btn-imprimir {
+      display: none;
+    }
+  }
+  
+  /*responsive*/
+  @media screen and (max-width: 600px) {
+    body {
+      padding: 10px;
+      margin: 10px;
+    }
+  
+    header h1 {
+      font-size: 32px;
+    }
+  
+    header img {
+      width: 140px;
+      height: 140px;
+    }
+  
+    header p {
+      font-size: 18px;
+      margin: 8px 5px;
+      overflow-wrap: anywhere;
+    }
+  
+    .botones button {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  
+    #perfil {
+      font-size: 18px;
+      padding: 10px;
+      margin: 20px auto;
+    }
+  
+    li {
+      font-size: 18px;
+    }
+  
+    .toggle-btn, .info {
+      width: 90%;
+      font-size: 15px;
+    }
+  
+    .btn-imprimir {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
