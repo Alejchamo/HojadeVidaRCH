@@ -37,3 +37,16 @@ const botones = document.querySelectorAll('.toggle-btn');
     }, 500);
   }
 
+  function verificarClave() {
+    const clave = "Alejo300870%"; // La clave que quieres poner
+    const claveIngresada = document.getElementById("clave").value;
+
+    if (claveIngresada === clave) {
+        // Si la clave es correcta, muestra el contenido y oculta la pantalla de acceso
+        document.getElementById("acceso").style.display = "none";
+        document.getElementById("contenido").style.display = "block";
+    } else {
+        // Si la clave es incorrecta, muestra un mensaje
+        alert("Clave incorrecta. Inténtalo de nuevo.");
+    }
+}

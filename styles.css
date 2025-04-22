@@ -254,3 +254,62 @@ header p {
     background-color: #2980b9;
   }
   
+
+  /* Estilos para la pantalla de acceso */
+.acceso {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegúrate que esté encima de todo */
+}
+
+.acceso-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 300px;
+}
+
+.acceso-form h2 {
+  margin-bottom: 20px;
+  color: rgb(18, 18, 83);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.acceso-form input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.acceso-form button {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgb(106, 108, 202);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.acceso-form button:hover {
+  background-color: rgb(80, 82, 180);
+}
+
+/* Estilos para la hoja de vida */
+#contenido {
+  margin: 20px;
+}
